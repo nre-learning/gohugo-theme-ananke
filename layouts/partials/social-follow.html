@@ -45,4 +45,9 @@
     {{ partial "svg/discord-brands.svg" (dict "size" $icon_size) }}
   </a>
 {{ end }}
+{{ with .Param "discourse" }}
+  <a href="{{ . }}" class="link-transition discord link dib z-999 pt3 pt0-l mr2" title="Discourse link">
+    {{ partial "svg/discourse-brands.svg" (dict "size" $icon_size) }}
+  </a>
+{{ end }}
 
